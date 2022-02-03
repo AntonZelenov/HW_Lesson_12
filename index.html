@@ -43,25 +43,41 @@
           <div class="radio-gender">
             <ul class="radio-gender__list">
               <li class="radio-gender__list-item">
-                <input type="radio" name="radio-gender" id="male" />
-                <label for="male">Male</label>
+                <input
+                  class="radio-gender__input"
+                  type="radio"
+                  name="radio-gender"
+                  id="male"
+                  value="gender"
+                  checked
+                />
+                <label class="radio-gender__label" for="male">Male</label>
+                <span class="radio-gender__span"></span>
               </li>
               <li class="radio-gender__list-item">
-                <input type="radio" name="radio-gender" id="female" />
-                <label for="female">Female</label>
+                <input
+                  class="radio-gender__input"
+                  type="radio"
+                  name="radio-gender"
+                  id="female"
+                  value="gender"
+                />
+                <label class="radio-gender__label" for="female">Female</label>
+                <span class="radio-gender__span"></span>
               </li>
             </ul>
           </div>
           <!--Form_location-->
           <div class="form__country">
             <div class="form__flex">
-              <div class="form__block">
+              <div class="form__block form__country">
                 <label for="scountry" class="form_block-title">Country</label>
                 <select class="form__text" name="scountry" id="scountry">
                   <option value="1">USA</option>
                   <option value="2">Canada</option>
                   <option value="3">Mexico</option>
                 </select>
+                <span class="country-arrow"></span>
               </div>
               <div class="form__block">
                 <label for="city" class="form_block-title">City</label>
