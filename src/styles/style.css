@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.container {
+  max-width: 540px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title-text {
+  padding-top: 20px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.form__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form__block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 245px;
+  width: 100%;
+}
+
+.form__email {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form_block-title {
+  margin-bottom: 7px;
+}
+
+.form__text {
+  border: 1px solid;
+  border-radius: 6px;
+  min-height: 38px;
+  border: 1px solid #e4e4e4;
+}
+
+.form__text:hover {
+  border: 1px solid #bc3f3f;
+  transition: 0.3s;
+}
+
+.form__text:focus {
+  outline: none;
+  border: 2px solid #007bff;
+}
+
+.form__email {
+  margin-bottom: 7px;
+}
+
+.confidence {
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height, or 138% */
+  letter-spacing: -0.1px;
+  color: #969696;
+  margin-bottom: 20px;
+}
+
+.radio-gender__list {
+  margin-bottom: 20px;
+}
+
+.radio-gender__list-item {
+  display: inline;
+  margin-right: 20px;
+}
+
+.button__submit {
+  max-width: 500px;
+  min-height: 38px;
+  width: 100%;
+  background-color: white;
+  color: #969696;
+  border-radius: 6px;
+  min-height: 38px;
+  border: 1px solid #e4e4e4;
+  margin-bottom: 22px;
+}
+
+.button__submit:hover {
+  background-color: rgb(230, 230, 236);
+  border: 1px solid #007bff;
+  transition: 0.3s;
+}
+
+.confirmation {
+  max-width: 410px;
+  width: 100%;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #969696;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.confirmation a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.log-in {
+  max-width: 500px;
+  width: 100%;
+  border-top: 1px solid #e4e4e4;
+  padding-top: 20px;
+}
+
+.log-in__text {
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.2px;
+  color: #545454;
+  margin: 0 auto;
+}
+
+.log-in__text a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
