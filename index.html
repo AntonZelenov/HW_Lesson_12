@@ -17,7 +17,7 @@
     <main>
       <div class="pages">
         <!--Create_an_Account-->
-        <div class="create-an-account">
+        <section class="create-an-account">
           <div class="container">
             <form action="#">
               <h1 class="title-text">Create an Account</h1>
@@ -135,19 +135,23 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <!--Profile-->
-        <div class="profile">
+        <section class="profile">
           <form action="#">
             <div class="container">
-              <h2 class="title-profile">Profile</h2>
+              <h1 class="title-profile">Profile</h1>
               <!--Photo-->
               <div class="form__hero-photo">
                 <div class="form__flex">
-                  <img src="src/images/hero.png" alt="hero-photo" />
+                  <div class="hero-photo">
+                    <img src="src/images/hero.png" alt="hero-photo" />
+                  </div>                  
                   <div class="form__block">
-                    <input type="file" name="file" id="file" />
-                    <label for="file"></label>
+                    <input class="form__file" type="file" name="file" id="file" />
+                    <label class="form__file-label" for="file">
+                      <span class="form__fake-input"></span>
+                    </label>
                     <span class="confidence">Up to 1 MB (300x300 px)</span>
                   </div>
                   <div>
@@ -243,7 +247,7 @@
             </form>
             </div>
           </form>
-        </div>
+        </section>
       </div>
     </main>
   </body>

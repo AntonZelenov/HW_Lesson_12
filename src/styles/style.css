@@ -203,7 +203,40 @@ select {
   margin-bottom: 20px;
 }
 
-.form__hero-photo {
+.form__hero-photo .form__flex {
+  justify-content: start;
+  align-items: center;
+}
+
+.hero-photo {
+  margin-right: 20px;
+}
+
+.profile .form__block {
+  padding-top: 20px;
+}
+
+.form__file {
+  opacity: 0;
+}
+
+.profile .confidence {
+  padding-top: 10px;
+}
+
+.form__file-label {
+  position: relative;
+}
+
+.form__fake-input {
+  position: absolute;
+  width: 138px;
+  min-height: 30px;
+  border: 1px solid;
+  border-radius: 6px;
+  border: 1px solid #e4e4e4;
+  padding-left: 10px;
+  top: -30px;
 }
 
 .profile .button__submit {
