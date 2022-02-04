@@ -212,7 +212,7 @@ select {
   margin-right: 20px;
 }
 
-.profile .form__block {
+.form__hero-photo .form__block {
   padding-top: 20px;
 }
 
@@ -237,6 +237,13 @@ select {
   border: 1px solid #e4e4e4;
   padding-left: 10px;
   top: -30px;
+}
+
+.form__fake-input::before {
+  position: absolute;
+  content: url(src/images/Photo_Camera.svg);
+  top: 50%;
+  left: 0;
 }
 
 .profile .button__submit {
