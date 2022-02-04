@@ -15,92 +15,234 @@
   </head>
   <body>
     <main>
-      <div class="container">
-        <h1 class="title-text">Create an Account</h1>
-        <form action="#">
-          <!--Form_Name-->
-          <div class="form__name">
-            <div class="form__flex">
-              <div class="form__block">
-                <label for="fname" class="form_block-title">First Name</label>
-                <input class="form__text" type="text" id="fname" name="fname" />
+      <div class="pages">
+        <!--Create_an_Account-->
+        <div class="create-an-account">
+          <div class="container">
+            <form action="#">
+              <h1 class="title-text">Create an Account</h1>
+              <!--Form_Name-->
+              <div class="form__name">
+                <div class="form__flex">
+                  <div class="form__block">
+                    <label for="first-name" class="form__block-title"
+                      >First Name</label
+                    >
+                    <input
+                      class="form__text"
+                      type="text"
+                      id="first-name"
+                      name="first-name"
+                    />
+                  </div>
+                  <div class="form__block">
+                    <label for="last-name" class="form__block-title"
+                      >Last Name</label
+                    >
+                    <input
+                      class="form__text"
+                      type="text"
+                      id="last-name"
+                      name="last-name"
+                    />
+                  </div>
+                </div>
               </div>
-              <div class="form__block">
-                <label for="lname" class="form_block-title">Last Name</label>
-                <input class="form__text" type="text" id="lname" name="lname" />
+              <!--E-mail-->
+              <div class="form__email">
+                <label for="email" class="form__block-title">E-mail</label>
+                <input
+                  class="form__text"
+                  type="email"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="confidence">
+                <span>We'll never share your email with anyone else.</span>
+              </div>
+              <!--Radio-gender-->
+              <div class="radio-gender">
+                <ul class="radio-gender__list">
+                  <li class="radio-gender__list-item">
+                    <input
+                      class="radio-gender__input"
+                      type="radio"
+                      name="radio-gender"
+                      id="male"
+                      value="gender"
+                      checked
+                    />
+                    <label class="radio-gender__label" for="male"
+                      ><span class="radio-gender__span"></span>Male</label
+                    >
+                  </li>
+                  <li class="radio-gender__list-item">
+                    <input
+                      class="radio-gender__input"
+                      type="radio"
+                      name="radio-gender"
+                      id="female"
+                      value="gender"
+                    />
+                    <label class="radio-gender__label" for="female"
+                      ><span class="radio-gender__span"></span>Female</label
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!--Form_location-->
+              <div class="form__country">
+                <div class="form__flex">
+                  <div class="form__block form__country">
+                    <label for="scountry" class="form__block-title"
+                      >Country</label
+                    >
+                    <select class="form__text" name="scountry" id="scountry">
+                      <option value="1">USA</option>
+                      <option value="2">Canada</option>
+                      <option value="3">Mexico</option>
+                    </select>
+                    <span class="country-arrow"></span>
+                  </div>
+                  <div class="form__block">
+                    <label for="city" class="form__block-title">City</label>
+                    <input
+                      class="form__text"
+                      type="text"
+                      id="city"
+                      name="city"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!--Button_submit-->
+              <div class="button">
+                <button type="submit" class="button__submit">Submit</button>
+              </div>
+            </form>
+            <!--Bottom_text-->
+            <div class="confirmation">
+              <span>
+                By clicking the 'Sign Up' button, you confirm that you accept
+                our
+                <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a>.
+              </span>
+            </div>
+            <div class="log-in">
+              <div class="log-in__text">
+                <span>Have an account? <a href="#">Log In</a></span>
               </div>
             </div>
           </div>
-          <!--E-mail-->
-          <div class="form__email">
-            <label for="email" class="form_block-title">E-mail</label>
-            <input class="form__text" type="email" id="email" name="email" />
-          </div>
-          <div class="confidence">
-            <span>We'll never share your email with anyone else.</span>
-          </div>
-          <!--Radio-gender-->
-          <div class="radio-gender">
-            <ul class="radio-gender__list">
-              <li class="radio-gender__list-item">
-                <input
-                  class="radio-gender__input"
-                  type="radio"
-                  name="radio-gender"
-                  id="male"
-                  value="gender"
-                  checked
-                />
-                <label class="radio-gender__label" for="male">Male</label>
-                <span class="radio-gender__span"></span>
-              </li>
-              <li class="radio-gender__list-item">
-                <input
-                  class="radio-gender__input"
-                  type="radio"
-                  name="radio-gender"
-                  id="female"
-                  value="gender"
-                />
-                <label class="radio-gender__label" for="female">Female</label>
-                <span class="radio-gender__span"></span>
-              </li>
-            </ul>
-          </div>
-          <!--Form_location-->
-          <div class="form__country">
-            <div class="form__flex">
-              <div class="form__block form__country">
-                <label for="scountry" class="form_block-title">Country</label>
-                <select class="form__text" name="scountry" id="scountry">
-                  <option value="1">USA</option>
-                  <option value="2">Canada</option>
-                  <option value="3">Mexico</option>
-                </select>
-                <span class="country-arrow"></span>
-              </div>
-              <div class="form__block">
-                <label for="city" class="form_block-title">City</label>
-                <input class="form__text" type="text" id="city" name="city" />
-              </div>
-            </div>
-          </div>
-          <!--Button_submit-->
-          <div class="button">
-            <button type="submit" class="button__submit">Submit</button>
-          </div>
-        </form>
-        <!--Bottom_text-->
-        <div class="confirmation">
-          <span>
-            By clicking the 'Sign Up' button, you confirm that you accept our
-            <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a>.
-          </span>
         </div>
-        <div class="log-in">
-          <div class="log-in__text">
-            <span>Have an account? <a href="#">Log In</a></span>
-          </div>
+        <!--Profile-->
+        <div class="profile">
+          <form action="#">
+            <div class="container">
+              <h2 class="title-profile">Profile</h2>
+              <!--Photo-->
+              <div class="form__hero-photo">
+                <div class="form__flex">
+                  <img src="src/images/hero.png" alt="hero-photo" />
+                  <div class="form__block">
+                    <input type="file" name="file" id="file" />
+                    <label for="file"></label>
+                    <span class="confidence">Up to 1 MB (300x300 px)</span>
+                  </div>
+                  <div>
+                    <input type="reset" />
+                  </div>
+                </div>
+              </div>
+              <!--Name-->
+              <div class="form__name">
+                <div class="form__flex">
+                  <div class="form__block">
+                    <label for="first-name" class="form__block-title"
+                      >Name</label
+                    >
+                    <input
+                      class="form__text"
+                      type="text"
+                      id="first-name"
+                      name="first-name"
+                    />
+                  </div>
+                  <div class="form__block">
+                    <div class="form__email">
+                      <label for="email" class="form__block-title"
+                        >E-mail</label
+                      >
+                      <input
+                        class="form__text"
+                        type="email"
+                        id="email"
+                        name="email"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Form_location-->
+              <div class="form__country">
+                <div class="form__flex">
+                  <div class="form__block form__country">
+                    <label for="scountry" class="form__block-title"
+                      >Country</label
+                    >
+                    <select class="form__text" name="scountry" id="scountry">
+                      <option value="1">USA</option>
+                      <option value="2">Canada</option>
+                      <option value="3">Mexico</option>
+                    </select>
+                    <span class="country-arrow"></span>
+                  </div>
+                  <div class="form__block">
+                    <label for="city" class="form__block-title">City</label>
+                    <input
+                      class="form__text"
+                      type="text"
+                      id="city"
+                      name="city"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!--ZIP+Phone-->
+              <div class="form__name">
+                <div class="form__flex">
+                  <div class="form__block">
+                    <label for="zip-code" class="form__block-title"
+                      >Zip Code</label
+                    >
+                    <input
+                      class="form__text"
+                      type="text"
+                      id="zip-code"
+                      name="zip-code"
+                    />
+                  </div>
+                  <div class="form__block">
+                    <label for="phone-number" class="form__block-title"
+                      >Phone Number</label
+                    >
+                    <input
+                      class="form__text"
+                      type="number"
+                      id="phone-number"
+                      name="phone-number"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!--Button_submit-->
+              <div class="button">
+                <button type="submit" class="button__submit">Submit</button>
+              </div>
+            </form>
+            </div>
+          </form>
         </div>
       </div>
     </main>

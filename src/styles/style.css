@@ -12,10 +12,16 @@ body {
   line-height: 22px;
 }
 
-.container {
-  max-width: 540px;
+.pages {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
   width: 100%;
-  padding: 0 15px;
+}
+
+.container {
+  min-width: 500px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -48,7 +54,7 @@ body {
   flex-wrap: wrap;
 }
 
-.form_block-title {
+.form__block-title {
   margin-bottom: 7px;
 }
 
@@ -57,6 +63,7 @@ body {
   border-radius: 6px;
   min-height: 38px;
   border: 1px solid #e4e4e4;
+  padding-left: 10px;
 }
 
 .form__text:hover {
@@ -76,7 +83,6 @@ body {
 .confidence {
   font-size: 13px;
   line-height: 18px;
-  /* identical to box height, or 138% */
   letter-spacing: -0.1px;
   color: #969696;
   margin-bottom: 20px;
@@ -107,7 +113,7 @@ body {
   background-color: rgb(245, 237, 237);
 }
 
-.radio-gender__input:checked ~ .radio-gender__span {
+.radio-gender__input:checked + .radio-gender__span {
   border: 7px solid #007bff;
   border-radius: 10px;
   background-color: white;
@@ -126,15 +132,9 @@ select {
   background-position: calc(100% - 0.25em) 0.35em;
 }
 
-/* .country-arrow {
-  position: absolute;
-  top: 40px;
-  left: 225px;
-  z-index: 2;
-  width: 18px;
-  height: 18px;
-  background: url(src/images/arrow.png);
-} */
+.button {
+  margin: 0 auto;
+}
 
 .button__submit {
   max-width: 500px;
@@ -191,4 +191,21 @@ select {
   text-decoration: none;
   color: #007bff;
   font-weight: bold;
+}
+
+/*Profile*/
+
+.title-profile {
+  padding-top: 20px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.form__hero-photo {
+}
+
+.profile .button__submit {
+  max-width: 150px;
 }
